@@ -8,6 +8,10 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <None Remove="Authors\IAuthorAppService.cs~RF5a6f81c4.TMP" />
+  </ItemGroup>
+
+  <ItemGroup>
     <ProjectReference Include="..\Acme.BookStore.Domain.Shared\Acme.BookStore.Domain.Shared.csproj" />
   </ItemGroup>
 
