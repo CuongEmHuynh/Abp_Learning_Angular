@@ -9,7 +9,7 @@ import { ConfirmationService, Confirmation } from '@abp/ng.theme.shared';
   selector: 'app-book',
   templateUrl: './book.component.html',
   styleUrls: ['./book.component.scss'],
-  providers:[ListService,
+  providers: [ListService,
     { provide: NgbDateAdapter, useClass: NgbDateNativeAdapter }]
 })
 export class BookComponent implements OnInit {
@@ -29,7 +29,7 @@ export class BookComponent implements OnInit {
     private bookService: BookService,
     private fb: FormBuilder,
     private confirmation: ConfirmationService // inject the ConfirmationService
-  ) {}
+  ) { }
 
   ngOnInit() {
     const bookStreamCreator = (query) => this.bookService.getList(query);
